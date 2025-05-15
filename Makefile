@@ -735,7 +735,7 @@ endif
 endif
 
 # Machine Learning Guided Optimization
-KBUILD_CFLAGS	+= -mllvm -regalloc-enable-advisor=release
+#KBUILD_CFLAGS	+= -mllvm -regalloc-enable-advisor=release
 
 # FP Contraction Optimizatiom
 KBUILD_CFLAGS	+= -ffp-contract=fast
