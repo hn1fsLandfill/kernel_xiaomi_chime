@@ -70,11 +70,11 @@ void radio_hci_event_packet(struct radio_hci_dev *hdev, struct sk_buff *skb);
 #define hci_req_unlock(d)	mutex_unlock(&d->req_lock)
 
 #undef FMDBG
-#ifdef FM_DEBUG
+//#ifdef FM_DEBUG
 #define FMDBG(fmt, args...) pr_debug("iris_radio: " fmt, ##args)
-#else
-#define FMDBG(fmt, args...)
-#endif
+//#else
+//#define FMDBG(fmt, args...)
+//#endif
 
 #undef FMDERR
 #define FMDERR(fmt, args...) pr_err("iris_radio: " fmt, ##args)
